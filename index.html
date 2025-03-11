@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naz'ın Şahsi Vocab App'i 🎀</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Rastgele cümle bölümündeki metni ortalamak için ek stil */
+    #random-sentence-section {
+      text-align: center;
+    }
+    #quiz-intro {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Naz'ın Şahsi Vocab App'i 🎀</h1>
+  </header>
+
+  <main>
+    <!-- Seviye ve İlerleme -->
+    <section id="progress-section">
+      <p id="level-info">Seviye: <span id="current-level">1</span></p>
+      <p id="progress-dots">İlerleme: 🟢⚪⚪</p>
+    </section>
+
+    <!-- Rastgele Cümle Gösterimi -->
+    <section id="random-sentence-section">
+      <p id="quiz-intro"></p>
+      <!-- 20 cümlenin bulunduğu gizli liste -->
+      <ul id="random-sentence-list" style="display: none;">
+        <li>Aşkım su içtin mi?</li>
+        <li>Coco Chanel diyor ki; "Her gün en büyük düşmanınla ve hayatının aşkıyla tanışacakmışsın gibi giyin.</li>
+        <li>Madem seni çok istiyorlardı, öylece ortaya koymasalardı...</li>
+        <li>Bugün bana beni sevdiğini söyledin mi?</li>
+        <li>Belediye çözücek o işi.</li>
+        <li>Ya HĞAK!</li>
+        <li>Maşallah kız bugün de çok güzelsin he.</li>
+        <li>Selmanovski yazılım hizmetinizde.</li>
+        <li>Sen ne güzel bir bebeksin böylee!</li>
+        <li>canimkarim online.</li>
+        <li>nice food / thanks I made it myself</li>
+        <li>Naci İnci mi Melih Bulu mu?</li>
+        <li>Zorluklar bizi daha güçlü yapar.</li>
+        <li>Bizim dışımızda herkes "das Keko".</li>
+        <li>Balarisicelinee online.</li>
+        <li>Pepepepepe.</li>
+        <li>Muci muci muci muaaaaaaaaah.</li>
+        <li>Hoşgeldin meleğimmm!</li>
+        <li>Vur kalbime hançeri, yüreğim parçalansın. Fazla derine inme, orda sen varsın.</li>
+        <li>Sen gökyüzünde doğan güneş, ben kodlar arasında çilekeş...</li>
+      </ul>
+    </section>
+
+    <!-- Quiz Bölümü -->
+    <section id="quiz-section">
+      <button id="start-btn">BAŞLA</button>
+
+      <div id="question-container" style="display: none;">
+        <div id="question-text"></div>
+        <div id="options"></div>
+        <div id="feedback-area"></div>
+        <p id="score-tracker">Doğru: 0 | Yanlış: 0</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rastgele cümleyi seçip gösteren script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const listItems = document.querySelectorAll("#random-sentence-list li");
+      const randomIndex = Math.floor(Math.random() * listItems.length);
+      document.getElementById("quiz-intro").innerText = listItems[randomIndex].innerText;
+    });
+  </script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
