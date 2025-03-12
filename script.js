@@ -8,7 +8,7 @@ let currentRound = [];        // Her tur için seçilen sorular
 let currentQuestionIndex = 0;
 let correctAnswers = 0;
 let wrongAnswers = 0;
-const PASS_THRESHOLD = 3;    // Turun geçilebilmesi için gereken doğru sayısı
+const PASS_THRESHOLD = 17;    // Turun geçilebilmesi için gereken doğru sayısı
 let questionAnswered = false; // Her soruda tıklama hakkı kontrolü
 
 // Sayfa yüklendiğinde kayıtlı ilerlemeyi al
@@ -179,16 +179,20 @@ function checkAnswer(selected, correct) {
 
   updateScoreTracker();
 
-  // Eğer doğru cevap sayısı PASS_THRESHOLD'e ulaştıysa, 3 saniye sonra turu bitir
-  if (correctAnswers >= PASS_THRESHOLD) {
+  // Eğer yanlış cevap sayısı, geçilebilecek maksimum (20 - PASS_THRESHOLD) sayısından fazlaysa testi bitir.
+  if (wrongAnswers > (20 - PASS_THRESHOLD)) {
     setTimeout(() => {
       endRound();
     }, 3000);
   } else {
-    // 3 saniye bekle, ardından sonraki soruya geç
+    // 3 saniye bekle, ardından sonraki soruya geç (veya son soruda turu bitir)
     setTimeout(() => {
       currentQuestionIndex++;
-      showQuestion();
+      if (currentQuestionIndex >= currentRound.length) {
+        endRound();
+      } else {
+        showQuestion();
+      }
     }, 3000);
   }
 }
