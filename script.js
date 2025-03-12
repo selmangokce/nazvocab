@@ -9,6 +9,7 @@ let currentQuestionIndex = 0;
 let correctAnswers = 0;
 let wrongAnswers = 0;
 const PASS_THRESHOLD = 3;    // Turun geçilebilmesi için gereken doğru sayısı
+let questionAnswered = false; // Her soruda tıklama hakkı kontrolü
 
 // Sayfa yüklendiğinde kayıtlı ilerlemeyi al
 window.addEventListener('load', () => {
@@ -111,6 +112,9 @@ function showQuestion() {
     endRound();
     return;
   }
+  
+  // Her yeni soruda tıklama kontrolünü sıfırla
+  questionAnswered = false;
 
   const questionData = currentRound[currentQuestionIndex];
   // Sadece Almanca kelimeyi göster (örn. "das Buch")
@@ -132,8 +136,24 @@ function showQuestion() {
     const btn = document.createElement('button');
     btn.className = 'option-btn';
     btn.innerText = option;
-    btn.addEventListener('click', () => checkAnswer(option, correctOption));
+    btn.addEventListener('click', () => {
+      if (!questionAnswered) {
+        questionAnswered = true;
+        disableOptionButtons(optionsContainer);
+        checkAnswer(option, correctOption);
+      }
+    });
     optionsContainer.appendChild(btn);
+  });
+}
+
+/*************************************
+ * SEÇENEK BUTONLARINI DEVRE DIŞI BIRAK
+ *************************************/
+function disableOptionButtons(container) {
+  const buttons = container.querySelectorAll('button');
+  buttons.forEach(btn => {
+    btn.disabled = true;
   });
 }
 
