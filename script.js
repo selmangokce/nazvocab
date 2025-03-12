@@ -280,3 +280,25 @@ function getDistractors(correctAnswer) {
   shuffleArray(possible);
   return possible.slice(0, 2);
 }
+
+function updateLevelInfo() {
+  document.getElementById("current-level").innerText = currentLevel;
+  // Diğer ilerleme göstergeleri vb.
+}
+
+// Seviyeyi manuel değiştirmek için dişli simgesine tıklama olayı
+document.getElementById("settings-icon").addEventListener("click", function() {
+  // Kullanıcıdan yeni seviye değeri al
+  const newLevel = prompt("Yeni seviye girin:");
+  if (newLevel !== null) { // prompt iptal edilmediyse
+    const parsedLevel = parseInt(newLevel);
+    if (!isNaN(parsedLevel) && parsedLevel > 0) {
+      currentLevel = parsedLevel;
+      localStorage.setItem("currentLevel", currentLevel.toString());
+      updateLevelInfo();
+      alert("Seviye güncellendi: " + currentLevel);
+    } else {
+      alert("Geçerli bir seviye girmeniz gerekiyor.");
+    }
+  }
+});
