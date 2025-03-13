@@ -17,6 +17,8 @@ window.addEventListener('load', () => {
   const savedSuccesses = localStorage.getItem('consecutiveSuccesses');
   if (savedLevel) currentLevel = parseInt(savedLevel);
   if (savedSuccesses) consecutiveSuccesses = parseInt(savedSuccesses);
+
+  // Initialize level info display
   updateLevelInfo();
 });
 
@@ -67,7 +69,7 @@ function startQuiz() {
  * GEÇERLİ TUR SORULARINI HAZIRLA
  *************************************/
 function prepareCurrentRound() {
-  // Level 1'de: 20 soru, hepsi level 1’deki 10 kelimeden (tekrarlar mümkün ama max 2)
+  // Level 1'de: 20 soru, hepsi level 1’den (maks 2 kez tekrar)
   if (currentLevel === 1) {
     let pool = vocabData.filter(w => w.level === 1);
     currentRound = pickWithMaxTwo(pool, 20);
@@ -89,7 +91,10 @@ function prepareCurrentRound() {
   }
 }
 
-/** Helper to pick `count` random items from `pool`, each item max 2 times. */
+/** 
+ * Helper to pick `count` random items from `pool`, 
+ * each item can appear at most 2 times.
+ */
 function pickWithMaxTwo(pool, count) {
   if (!pool || pool.length === 0) return [];
   let result = [];
@@ -125,7 +130,9 @@ function showQuestion() {
   // Her yeni soruda tıklama kontrolünü sıfırla
   questionAnswered = false;
 
+  // Soru verisi
   const questionData = currentRound[currentQuestionIndex];
+
   // Sadece Almanca kelimeyi göster
   document.getElementById('question-text').innerText = questionData.german;
   document.getElementById('feedback-area').innerHTML = '';
@@ -133,14 +140,14 @@ function showQuestion() {
   // 3 şık (1 doğru + 2 rastgele yanlış)
   const correctOption = questionData.turkish;
   const distractors = getDistractors(questionData);
-
   let allOptions = [correctOption, ...distractors];
   shuffleArray(allOptions);
 
-  // Şık butonlarını oluştur
+  // Eski seçenekleri temizle
   const optionsContainer = document.getElementById('options');
   optionsContainer.innerHTML = '';
 
+  // Yeni seçenek butonlarını oluştur
   allOptions.forEach(option => {
     const btn = document.createElement('button');
     btn.className = 'option-btn';
@@ -148,7 +155,9 @@ function showQuestion() {
     btn.addEventListener('click', () => {
       if (!questionAnswered) {
         questionAnswered = true;
+        // Butonları devre dışı bırakalım
         disableOptionButtons(optionsContainer);
+        // Cevabı kontrol edelim
         checkAnswer(option, correctOption);
       }
     });
@@ -167,11 +176,12 @@ function disableOptionButtons(container) {
 }
 
 /*************************************
- * CEVABI KONTROL ET (UPDATED FOR HIGHLIGHTING)
+ * CEVABI KONTROL ET (HIGHLIGHT OLUMLARI)
  *************************************/
 function checkAnswer(selected, correct) {
   const feedbackArea = document.getElementById('feedback-area');
-  // Highlight the correct button in green
+  
+  // 1) Her zaman doğru seçeneği yeşile boyayalım:
   highlightCorrectOption(correct);
 
   if (selected.toLowerCase() === correct.toLowerCase()) {
@@ -182,7 +192,7 @@ function checkAnswer(selected, correct) {
     `;
   } else {
     wrongAnswers++;
-    // Highlight the user's chosen (wrong) button in red
+    // 2) Seçilen yanlış cevabı kırmızı boyayalım:
     highlightWrongOption(selected);
     feedbackArea.innerHTML = `
       <p class="wrong-feedback">YANLIŞ 💔!</p>
@@ -192,13 +202,13 @@ function checkAnswer(selected, correct) {
 
   updateScoreTracker();
 
-  // Eğer yanlış cevap sayısı (20 - PASS_THRESHOLD) sayısından fazlaysa testi bitir
+  // Eğer yanlış cevap sayısı (20 - PASS_THRESHOLD)'i aşarsa testi bitir
   if (wrongAnswers > (20 - PASS_THRESHOLD)) {
     setTimeout(() => {
       endRound();
     }, 3000);
   } else {
-    // 3 saniye bekle, ardından sonraki soruya geç
+    // 3 sn bekle, sonra sonraki soruya geç
     setTimeout(() => {
       currentQuestionIndex++;
       if (currentQuestionIndex >= currentRound.length) {
@@ -285,7 +295,8 @@ function updateLevelInfo() {
  * DOĞRU / YANLIŞ SAYACINI GÜNCELLE
  *************************************/
 function updateScoreTracker() {
-  document.getElementById('score-tracker').innerText = `Doğru: ${correctAnswers} | Yanlış: ${wrongAnswers}`;
+  document.getElementById('score-tracker').innerText =
+    `Doğru: ${correctAnswers} | Yanlış: ${wrongAnswers}`;
 }
 
 /*************************************
@@ -332,7 +343,7 @@ function getDistractors(questionData) {
   return candidates.slice(0, 2).map(item => item.turkish);
 }
 
-// Seviyeyi manuel değiştirmek için dişli simgesine tıklama olayı
+// Seviyeyi manuel değiştirmek için dişli simgesine tıklama
 document.getElementById("settings-icon").addEventListener("click", function() {
   const newLevel = prompt("Yeni seviye girin:");
   if (newLevel !== null) {
