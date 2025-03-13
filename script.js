@@ -67,8 +67,7 @@ function startQuiz() {
  * GEÇERLİ TUR SORULARINI HAZIRLA
  *************************************/
 function prepareCurrentRound() {
-  // Toplam 20 soru hazırlanacak
-  // Level 1'de: 20 soru, hepsi level 1'den (tekrarlar mümkün ama max 2 kez aynı kelime)
+  // Level 1'de: 20 soru, hepsi level 1’deki 10 kelimeden (tekrarlar mümkün ama max 2)
   if (currentLevel === 1) {
     let pool = vocabData.filter(w => w.level === 1);
     currentRound = pickWithMaxTwo(pool, 20);
@@ -90,36 +89,26 @@ function prepareCurrentRound() {
   }
 }
 
-/**
- * Helper function to pick `count` random items from `pool`
- * but ensure no single word is chosen more than twice.
- */
+/** Helper to pick `count` random items from `pool`, each item max 2 times. */
 function pickWithMaxTwo(pool, count) {
   if (!pool || pool.length === 0) return [];
   let result = [];
-  let usageCount = {}; // Key: an ID or unique string, Value: how many times used
+  let usageCount = {};
 
-  // We attempt to randomly pick until we have `count` items or exhaust possibilities
-  // We'll do 10x attempts as a safeguard in case the pool is too small
-  // or if it's impossible to pick enough unique items up to 2 each.
   let attempts = 0;
   while (result.length < count && attempts < count * 10) {
     attempts++;
     let randIndex = Math.floor(Math.random() * pool.length);
     let candidate = pool[randIndex];
-
-    // Use the combination of "german + turkish" as a unique key, or you might have an ID
     let key = candidate.german + '|' + candidate.turkish;
-    usageCount[key] = usageCount[key] || 0;
 
-    // Only add if used < 2 times so far
+    usageCount[key] = usageCount[key] || 0;
     if (usageCount[key] < 2) {
       result.push(candidate);
       usageCount[key]++;
     }
   }
 
-  // Shuffle the resulting picks
   shuffleArray(result);
   return result;
 }
@@ -137,7 +126,7 @@ function showQuestion() {
   questionAnswered = false;
 
   const questionData = currentRound[currentQuestionIndex];
-  // Sadece Almanca kelimeyi göster (örn. "das Buch")
+  // Sadece Almanca kelimeyi göster
   document.getElementById('question-text').innerText = questionData.german;
   document.getElementById('feedback-area').innerHTML = '';
 
@@ -178,10 +167,12 @@ function disableOptionButtons(container) {
 }
 
 /*************************************
- * CEVABI KONTROL ET
+ * CEVABI KONTROL ET (UPDATED FOR HIGHLIGHTING)
  *************************************/
 function checkAnswer(selected, correct) {
   const feedbackArea = document.getElementById('feedback-area');
+  // Highlight the correct button in green
+  highlightCorrectOption(correct);
 
   if (selected.toLowerCase() === correct.toLowerCase()) {
     correctAnswers++;
@@ -191,6 +182,8 @@ function checkAnswer(selected, correct) {
     `;
   } else {
     wrongAnswers++;
+    // Highlight the user's chosen (wrong) button in red
+    highlightWrongOption(selected);
     feedbackArea.innerHTML = `
       <p class="wrong-feedback">YANLIŞ 💔!</p>
       <img src="https://i.pinimg.com/736x/07/19/84/071984be06de00433204106526040902.jpg" alt="Yanlış Resim" />
@@ -199,13 +192,13 @@ function checkAnswer(selected, correct) {
 
   updateScoreTracker();
 
-  // Eğer yanlış cevap sayısı, geçilebilecek maksimum (20 - PASS_THRESHOLD) sayısından fazlaysa testi bitir.
+  // Eğer yanlış cevap sayısı (20 - PASS_THRESHOLD) sayısından fazlaysa testi bitir
   if (wrongAnswers > (20 - PASS_THRESHOLD)) {
     setTimeout(() => {
       endRound();
     }, 3000);
   } else {
-    // 3 saniye bekle, ardından sonraki soruya geç (veya son soruda turu bitir)
+    // 3 saniye bekle, ardından sonraki soruya geç
     setTimeout(() => {
       currentQuestionIndex++;
       if (currentQuestionIndex >= currentRound.length) {
@@ -215,6 +208,27 @@ function checkAnswer(selected, correct) {
       }
     }, 3000);
   }
+}
+
+/*************************************
+ * HIGHLIGHTING HELPER FUNCTIONS
+ *************************************/
+function highlightCorrectOption(correct) {
+  const buttons = document.querySelectorAll('.option-btn');
+  buttons.forEach(btn => {
+    if (btn.innerText.toLowerCase() === correct.toLowerCase()) {
+      btn.classList.add('highlight-correct');
+    }
+  });
+}
+
+function highlightWrongOption(selected) {
+  const buttons = document.querySelectorAll('.option-btn');
+  buttons.forEach(btn => {
+    if (btn.innerText.toLowerCase() === selected.toLowerCase()) {
+      btn.classList.add('highlight-wrong');
+    }
+  });
 }
 
 /*************************************
@@ -318,16 +332,10 @@ function getDistractors(questionData) {
   return candidates.slice(0, 2).map(item => item.turkish);
 }
 
-function updateLevelInfo() {
-  document.getElementById("current-level").innerText = currentLevel;
-  // Diğer ilerleme göstergeleri vb.
-}
-
 // Seviyeyi manuel değiştirmek için dişli simgesine tıklama olayı
 document.getElementById("settings-icon").addEventListener("click", function() {
-  // Kullanıcıdan yeni seviye değeri al
   const newLevel = prompt("Yeni seviye girin:");
-  if (newLevel !== null) { // prompt iptal edilmediyse
+  if (newLevel !== null) {
     const parsedLevel = parseInt(newLevel);
     if (!isNaN(parsedLevel) && parsedLevel > 0) {
       currentLevel = parsedLevel;
