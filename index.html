@@ -4,17 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Naz'ın Şahsi Vocab App'i 🎀</title>
+  <!-- Link to external CSS -->
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Rastgele cümle bölümündeki metni ortalamak için ek stil */
-    #random-sentence-section {
-      text-align: center;
-    }
-    #quiz-intro {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -25,20 +16,18 @@
     <!-- Seviye ve İlerleme -->
     <section id="progress-section">
       <p id="level-info">Seviye: <span id="current-level">1</span>
-      <span id="settings-icon" style="cursor: pointer;">⚙</span>
+        <span id="settings-icon" style="cursor: pointer;">⚙</span>
+      </p>
       <p id="progress-dots">İlerleme: 🟢⚪⚪</p>
     </section>
 
-
-    
-
     <!-- Rastgele Cümle Gösterimi -->
-    <section id="random-sentence-section">
+    <section id="random-sentence-section" style="text-align: center;">
       <p id="quiz-intro"></p>
       <!-- 20 cümlenin bulunduğu gizli liste -->
       <ul id="random-sentence-list" style="display: none;">
         <li>Aşkım su içtin mi?</li>
-        <li>Coco Chanel diyor ki; "Her gün en büyük düşmanınla ve hayatının aşkıyla tanışacakmışsın gibi giyin.</li>
+        <li>Coco Chanel diyor ki; "Her gün en büyük düşmanınla ve hayatının aşkıyla tanışacakmışsın gibi giyin."</li>
         <li>Madem seni çok istiyorlardı, öylece ortaya koymasalardı...</li>
         <li>Bugün bana beni sevdiğini söyledin mi?</li>
         <li>Belediye çözücek o işi.</li>
@@ -61,7 +50,7 @@
     </section>
 
     <!-- Quiz Bölümü -->
-    <section id="quiz-section">
+    <section id="quiz-section" style="text-align: center;">
       <button id="start-btn">BAŞLA</button>
 
       <div id="question-container" style="display: none;">
@@ -81,7 +70,8 @@
       document.getElementById("quiz-intro").innerText = listItems[randomIndex].innerText;
     });
   </script>
-  
+
+  <!-- Main Quiz Logic -->
   <script src="script.js"></script>
 </body>
 </html>
