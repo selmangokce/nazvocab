@@ -97,12 +97,13 @@ body {
     cursor: pointer;
   }
 
-.highlight-correct {
-  background-color: green;
-  color: #fff;
+.option-btn.highlight-correct {
+  background-color: green !important;
+  color: #fff !important;
 }
 
-.highlight-wrong {
-  background-color: red;
-  color: #fff;
+.option-btn.highlight-wrong {
+  background-color: red !important;
+  color: #fff !important;
 }
+
