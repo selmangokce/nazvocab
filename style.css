@@ -1,111 +1,207 @@
-/* Genel Stil */
-body {
+/* ---------------------------------------------
+   GLOBAL RESET + FONT
+   --------------------------------------------- */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: url('https://img.freepik.com/free-vector/pink-butterflies-pink-background_306501-888.jpg') no-repeat center center fixed;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://img.freepik.com/free-vector/pink-butterflies-pink-background_306501-888.jpg') 
+              no-repeat center center fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #333;
 }
 
-/* Üst Başlık */
+/* ---------------------------------------------
+   HEADER
+   --------------------------------------------- */
 header {
   width: 100%;
   background-color: rgba(51, 51, 51, 0.8);
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-}
-
-/* Ana İçerik */
-main {
-  background: rgba(255, 255, 255, 0.9);
-  width: 90%;
-  max-width: 600px;
-  margin: 1rem auto;
-  padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
-}
-
-/* Seviye & İlerleme */
-#progress-section {
   margin-bottom: 1rem;
 }
+header h1 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.ribbon-emoji {
+  margin-left: 0.3rem;
+}
 
-/* Quiz Bölümü */
-#quiz-section {
+/* ---------------------------------------------
+   MAIN CONTAINER
+   --------------------------------------------- */
+main {
+  background: rgba(255, 255, 255, 0.95);
+  width: 90%;
+  max-width: 650px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   text-align: center;
 }
 
+/* ---------------------------------------------
+   PROGRESS SECTION
+   --------------------------------------------- */
+#progress-section {
+  margin-bottom: 1rem;
+}
+#level-info {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+#progress-dots {
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+
+/* ---------------------------------------------
+   RANDOM SENTENCE (INTRO)
+   --------------------------------------------- */
+#random-sentence-section {
+  margin-bottom: 1rem;
+}
+#quiz-intro {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+/* ---------------------------------------------
+   QUIZ SECTION
+   --------------------------------------------- */
+#quiz-section {
+  text-align: center;
+}
+#start-btn {
+  background-color: #f09aca;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(240,154,202,0.3);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+#start-btn:hover {
+  background-color: #ec79b4;
+  box-shadow: 0 4px 10px rgba(236,121,180,0.4);
+}
+#start-btn:active {
+  background-color: #e1529a;
+}
+
+/* The question container */
+#question-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
 #question-text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
+/* Options (the answer choices) */
 #options {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
+/* Base style for each answer button */
 .option-btn {
   display: inline-block;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  padding: 0.7rem 1.2rem;
   cursor: pointer;
-  background-color: #ddd;
+  background-color: #ebebeb;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.option-btn:hover {
-  background-color: #ccc;
+.option-btn:hover:not(:disabled) {
+  background-color: #d5d5d5;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+.option-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
-/* Geri Bildirim */
+/* Highlight correct / wrong choices */
+.option-btn.highlight-correct {
+  background-color: #42ba96 !important; /* greenish pastel */
+  color: #fff !important;
+}
+.option-btn.highlight-wrong {
+  background-color: #e54b4b !important; /* reddish pastel */
+  color: #fff !important;
+}
+
+/* ---------------------------------------------
+   FEEDBACK AREA
+   --------------------------------------------- */
 #feedback-area {
   margin-bottom: 1rem;
+  min-height: 60px; /* so layout doesn't jump when text changes */
+  line-height: 1.4;
 }
-
 #feedback-area img {
-  max-width: 160px;
+  max-width: 150px;
   display: block;
   margin: 0.5rem auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
+/* Correct / wrong feedback text styles */
 .correct-feedback {
   color: #007700;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .wrong-feedback {
   color: #bb0000;
-  font-weight: bold;
+  font-weight: 700;
 }
 
+/* Score Tracker */
 #score-tracker {
   margin-top: 1rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* Butonlar */
-#start-btn {
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-/* Highlighting classes
-   Using .option-btn.highlight-correct with !important ensures
-   it overrides background from .option-btn. */
-.option-btn.highlight-correct {
-  background-color: green !important;
-  color: #fff !important;
-}
-
-.option-btn.highlight-wrong {
-  background-color: red !important;
-  color: #fff !important;
+/* Media Query for narrower devices */
+@media (max-width: 480px) {
+  #question-text {
+    font-size: 1.2rem;
+  }
+  .option-btn {
+    font-size: 0.9rem;
+  }
+  #start-btn {
+    font-size: 0.95rem;
+  }
 }
