@@ -2,1001 +2,1201 @@
   {
     "level": 1,
     "german": "gehen (gegangen)",
-    "turkish": "gitmek"
+    "turkish": "gitmek",
+    "type": "verb"
   },
   {
     "level": 1,
     "german": "die Katze",
-    "turkish": "kedi"
+    "turkish": "kedi",
+    "type": "noun"
   },
   {
     "level": 1,
     "german": "öffnen (geöffnet)",
-    "turkish": "açmak"
+    "turkish": "açmak",
+    "type": "verb"
   },
   {
     "level": 1,
     "german": "und",
-    "turkish": "ve"
+    "turkish": "ve",
+    "type": "conjunction"
   },
   {
     "level": 1,
     "german": "das Buch",
-    "turkish": "kitap"
+    "turkish": "kitap",
+    "type": "noun"
   },
   {
     "level": 1,
     "german": "sprechen (gesprochen)",
-    "turkish": "konuşmak"
+    "turkish": "konuşmak",
+    "type": "verb"
   },
   {
     "level": 1,
     "german": "hören (gehört)",
-    "turkish": "duymak"
+    "turkish": "duymak",
+    "type": "verb"
   },
   {
     "level": 1,
     "german": "der Mann",
-    "turkish": "adam"
+    "turkish": "adam",
+    "type": "noun"
   },
   {
     "level": 1,
     "german": "aber",
-    "turkish": "ama"
+    "turkish": "ama",
+    "type": "conjunction"
   },
   {
     "level": 1,
     "german": "die Frau",
-    "turkish": "kadın"
+    "turkish": "kadın",
+    "type": "noun"
   },
   {
     "level": 2,
     "german": "der Hund",
-    "turkish": "köpek"
+    "turkish": "köpek",
+    "type": "noun"
   },
   {
     "level": 2,
     "german": "lernen (gelernt)",
-    "turkish": "öğrenmek"
+    "turkish": "öğrenmek",
+    "type": "verb"
   },
   {
     "level": 2,
     "german": "oder",
-    "turkish": "veya"
+    "turkish": "veya",
+    "type": "conjunction"
   },
   {
     "level": 2,
     "german": "die Blume",
-    "turkish": "çiçek"
+    "turkish": "çiçek",
+    "type": "noun"
   },
   {
     "level": 2,
     "german": "schreiben (geschrieben)",
-    "turkish": "yazmak"
+    "turkish": "yazmak",
+    "type": "verb"
   },
   {
     "level": 2,
     "german": "kommen (gekommen)",
-    "turkish": "gelmek"
+    "turkish": "gelmek",
+    "type": "verb"
   },
   {
     "level": 2,
     "german": "das Haus",
-    "turkish": "ev"
+    "turkish": "ev",
+    "type": "noun"
   },
   {
     "level": 2,
     "german": "die Schwester",
-    "turkish": "kız kardeş"
+    "turkish": "kız kardeş",
+    "type": "noun"
   },
   {
     "level": 2,
     "german": "lesen (gelesen)",
-    "turkish": "okumak"
+    "turkish": "okumak",
+    "type": "verb"
   },
   {
     "level": 2,
     "german": "weil",
-    "turkish": "çünkü"
+    "turkish": "çünkü",
+    "type": "conjunction"
   },
   {
     "level": 3,
     "german": "fahren (gefahren)",
-    "turkish": "sürmek"
+    "turkish": "sürmek",
+    "type": "verb"
   },
   {
     "level": 3,
     "german": "die Stadt",
-    "turkish": "şehir"
+    "turkish": "şehir",
+    "type": "noun"
   },
   {
     "level": 3,
     "german": "trinken (getrunken)",
-    "turkish": "içmek"
+    "turkish": "içmek",
+    "type": "verb"
   },
   {
     "level": 3,
     "german": "der Freund",
-    "turkish": "arkadaş (erkek)"
+    "turkish": "arkadaş (erkek)",
+    "type": "noun"
   },
   {
     "level": 3,
     "german": "die Freundin",
-    "turkish": "arkadaş (kadın)"
+    "turkish": "arkadaş (kadın)",
+    "type": "noun"
   },
   {
     "level": 3,
     "german": "sondern",
-    "turkish": "fakat"
+    "turkish": "fakat",
+    "type": "conjunction"
   },
   {
     "level": 3,
     "german": "essen (gegessen)",
-    "turkish": "yemek"
+    "turkish": "yemek",
+    "type": "verb"
   },
   {
     "level": 3,
     "german": "das Auto",
-    "turkish": "araba"
+    "turkish": "araba",
+    "type": "noun"
   },
   {
     "level": 3,
     "german": "die Tasche",
-    "turkish": "çanta"
+    "turkish": "çanta",
+    "type": "noun"
   },
   {
     "level": 3,
     "german": "sehen (gesehen)",
-    "turkish": "görmek"
+    "turkish": "görmek",
+    "type": "verb"
   },
   {
     "level": 4,
     "german": "schwimmen (geschwommen)",
-    "turkish": "yüzmek"
+    "turkish": "yüzmek",
+    "type": "verb"
   },
   {
     "level": 4,
     "german": "der Vogel",
-    "turkish": "kuş"
+    "turkish": "kuş",
+    "type": "noun"
   },
   {
     "level": 4,
     "german": "wohnen (gewohnt)",
-    "turkish": "oturmak"
+    "turkish": "oturmak",
+    "type": "verb"
   },
   {
     "level": 4,
     "german": "die Suppe",
-    "turkish": "çorba"
+    "turkish": "çorba",
+    "type": "noun"
   },
   {
     "level": 4,
     "german": "treffen (getroffen)",
-    "turkish": "buluşmak"
+    "turkish": "buluşmak",
+    "type": "verb"
   },
   {
     "level": 4,
     "german": "die Straße",
-    "turkish": "cadde"
+    "turkish": "cadde",
+    "type": "noun"
   },
   {
     "level": 4,
     "german": "kaufen (gekauft)",
-    "turkish": "satın almak"
+    "turkish": "satın almak",
+    "type": "verb"
   },
   {
     "level": 4,
     "german": "wenn",
-    "turkish": "eğer"
+    "turkish": "eğer",
+    "type": "conjunction"
   },
   {
     "level": 4,
     "german": "das Flugzeug",
-    "turkish": "uçak"
+    "turkish": "uçak",
+    "type": "noun"
   },
   {
     "level": 4,
     "german": "bleiben (geblieben)",
-    "turkish": "kalmak"
+    "turkish": "kalmak",
+    "type": "verb"
   },
   {
     "level": 5,
     "german": "fragen (gefragt)",
-    "turkish": "sormak"
+    "turkish": "sormak",
+    "type": "verb"
   },
   {
     "level": 5,
     "german": "die Familie",
-    "turkish": "aile"
+    "turkish": "aile",
+    "type": "noun"
   },
   {
     "level": 5,
     "german": "wandern (gewandert)",
-    "turkish": "yürüyüş yapmak"
+    "turkish": "yürüyüş yapmak",
+    "type": "verb"
   },
   {
     "level": 5,
     "german": "das Kino",
-    "turkish": "sinema"
+    "turkish": "sinema",
+    "type": "noun"
   },
   {
     "level": 5,
     "german": "spielen (gespielt)",
-    "turkish": "oynamak"
+    "turkish": "oynamak",
+    "type": "verb"
   },
   {
     "level": 5,
     "german": "die Arbeit",
-    "turkish": "iş"
+    "turkish": "iş",
+    "type": "noun"
   },
   {
     "level": 5,
     "german": "helfen (geholfen)",
-    "turkish": "yardım etmek"
+    "turkish": "yardım etmek",
+    "type": "verb"
   },
   {
     "level": 5,
     "german": "die Hand",
-    "turkish": "el"
+    "turkish": "el",
+    "type": "noun"
   },
   {
     "level": 5,
     "german": "doch",
-    "turkish": "yine de"
+    "turkish": "yine de",
+    "type": "conjunction"
   },
   {
     "level": 5,
     "german": "der Bruder",
-    "turkish": "erkek kardeş"
+    "turkish": "erkek kardeş",
+    "type": "noun"
   },
   {
     "level": 6,
     "german": "sagen (gesagt)",
-    "turkish": "söylemek"
+    "turkish": "söylemek",
+    "type": "verb"
   },
   {
     "level": 6,
     "german": "das Getränk",
-    "turkish": "içecek"
+    "turkish": "içecek",
+    "type": "noun"
   },
   {
     "level": 6,
     "german": "springen (gesprungen)",
-    "turkish": "zıplamak"
+    "turkish": "zıplamak",
+    "type": "verb"
   },
   {
     "level": 6,
     "german": "die Schule",
-    "turkish": "okul"
+    "turkish": "okul",
+    "type": "noun"
   },
   {
     "level": 6,
     "german": "entscheiden (entschieden)",
-    "turkish": "karar vermek"
+    "turkish": "karar vermek",
+    "type": "verb"
   },
   {
     "level": 6,
     "german": "die Zeit",
-    "turkish": "zaman"
+    "turkish": "zaman",
+    "type": "noun"
   },
   {
     "level": 6,
     "german": "dass",
-    "turkish": "ki"
+    "turkish": "ki",
+    "type": "conjunction"
   },
   {
     "level": 6,
     "german": "tragen (getragen)",
-    "turkish": "taşımak / giymek"
+    "turkish": "taşımak / giymek",
+    "type": "verb"
   },
   {
     "level": 6,
     "german": "das Lied",
-    "turkish": "şarkı"
+    "turkish": "şarkı",
+    "type": "noun"
   },
   {
     "level": 6,
     "german": "warten (gewartet)",
-    "turkish": "beklemek"
+    "turkish": "beklemek",
+    "type": "verb"
   },
   {
     "level": 7,
     "german": "lügen (gelogen)",
-    "turkish": "yalan söylemek"
+    "turkish": "yalan söylemek",
+    "type": "verb"
   },
   {
     "level": 7,
     "german": "das Problem",
-    "turkish": "sorun"
+    "turkish": "sorun",
+    "type": "noun"
   },
   {
     "level": 7,
     "german": "die Lösung",
-    "turkish": "çözüm"
+    "turkish": "çözüm",
+    "type": "noun"
   },
   {
     "level": 7,
     "german": "tanzen (getanzt)",
-    "turkish": "dans etmek"
+    "turkish": "dans etmek",
+    "type": "verb"
   },
   {
     "level": 7,
     "german": "wählen (gewählt)",
-    "turkish": "seçmek"
+    "turkish": "seçmek",
+    "type": "verb"
   },
   {
     "level": 7,
     "german": "die Hoffnung",
-    "turkish": "umut"
+    "turkish": "umut",
+    "type": "noun"
   },
   {
     "level": 7,
     "german": "werden (geworden)",
-    "turkish": "olmak"
+    "turkish": "olmak",
+    "type": "verb"
   },
   {
     "level": 7,
     "german": "das Gespräch",
-    "turkish": "konuşma"
+    "turkish": "konuşma",
+    "type": "noun"
   },
   {
     "level": 7,
     "german": "zu Hause",
-    "turkish": "evde"
+    "turkish": "evde",
+    "type": "phrase"
   },
   {
     "level": 7,
     "german": "verstehen (verstanden)",
-    "turkish": "anlamak"
+    "turkish": "anlamak",
+    "type": "verb"
   },
   {
     "level": 8,
     "german": "versuchen (versucht)",
-    "turkish": "denemek"
+    "turkish": "denemek",
+    "type": "verb"
   },
   {
     "level": 8,
     "german": "die Wand",
-    "turkish": "duvar"
+    "turkish": "duvar",
+    "type": "noun"
   },
   {
     "level": 8,
     "german": "die Decke",
-    "turkish": "tavan"
+    "turkish": "tavan",
+    "type": "noun"
   },
   {
     "level": 8,
     "german": "müssen (gemusst)",
-    "turkish": "zorunda olmak"
+    "turkish": "zorunda olmak",
+    "type": "verb"
   },
   {
     "level": 8,
     "german": "die Brille",
-    "turkish": "gözlük"
+    "turkish": "gözlük",
+    "type": "noun"
   },
   {
     "level": 8,
     "german": "danken (gedankt)",
-    "turkish": "teşekkür etmek"
+    "turkish": "teşekkür etmek",
+    "type": "verb"
   },
   {
     "level": 8,
     "german": "deshalb",
-    "turkish": "bu yüzden"
+    "turkish": "bu yüzden",
+    "type": "adverb"
   },
   {
     "level": 8,
     "german": "suchen (gesucht)",
-    "turkish": "aramak"
+    "turkish": "aramak",
+    "type": "verb"
   },
   {
     "level": 8,
     "german": "die Woche",
-    "turkish": "hafta"
+    "turkish": "hafta",
+    "type": "noun"
   },
   {
     "level": 8,
     "german": "lachen (gelacht)",
-    "turkish": "gülmek"
+    "turkish": "gülmek",
+    "type": "verb"
   },
   {
     "level": 9,
     "german": "bringen (gebracht)",
-    "turkish": "getirmek"
+    "turkish": "getirmek",
+    "type": "verb"
   },
   {
     "level": 9,
     "german": "der Rücken",
-    "turkish": "sırt"
+    "turkish": "sırt",
+    "type": "noun"
   },
   {
     "level": 9,
     "german": "die Schulter",
-    "turkish": "omuz"
+    "turkish": "omuz",
+    "type": "noun"
   },
   {
     "level": 9,
     "german": "dürfen (gedurft)",
-    "turkish": "izinli olmak"
+    "turkish": "izinli olmak",
+    "type": "verb"
   },
   {
     "level": 9,
     "german": "die Möglichkeit",
-    "turkish": "olanak"
+    "turkish": "olanak",
+    "type": "noun"
   },
   {
     "level": 9,
     "german": "der Moment",
-    "turkish": "an"
+    "turkish": "an",
+    "type": "noun"
   },
   {
     "level": 9,
     "german": "lieben (geliebt)",
-    "turkish": "sevmek"
+    "turkish": "sevmek",
+    "type": "verb"
   },
   {
     "level": 9,
     "german": "die Hochzeit",
-    "turkish": "düğün"
+    "turkish": "düğün",
+    "type": "noun"
   },
   {
     "level": 9,
     "german": "reisen (gereist)",
-    "turkish": "seyahat etmek"
+    "turkish": "seyahat etmek",
+    "type": "verb"
   },
   {
     "level": 9,
     "german": "damit",
-    "turkish": "böylece"
+    "turkish": "böylece",
+    "type": "conjunction"
   },
   {
     "level": 10,
     "german": "backen (gebacken)",
-    "turkish": "fırında pişirmek"
+    "turkish": "fırında pişirmek",
+    "type": "verb"
   },
   {
     "level": 10,
     "german": "der Kuchen",
-    "turkish": "pasta"
+    "turkish": "pasta",
+    "type": "noun"
   },
   {
     "level": 10,
     "german": "die Bäckerei",
-    "turkish": "fırın"
+    "turkish": "fırın",
+    "type": "noun"
   },
   {
     "level": 10,
     "german": "einladen (eingeladen)",
-    "turkish": "davet etmek"
+    "turkish": "davet etmek",
+    "type": "verb"
   },
   {
     "level": 10,
     "german": "die Einladung",
-    "turkish": "davet"
+    "turkish": "davet",
+    "type": "noun"
   },
   {
     "level": 10,
     "german": "glauben (geglaubt)",
-    "turkish": "inanmak"
+    "turkish": "inanmak",
+    "type": "verb"
   },
   {
     "level": 10,
     "german": "der Kopf",
-    "turkish": "baş"
+    "turkish": "baş",
+    "type": "noun"
   },
   {
     "level": 10,
     "german": "das Krankenhaus",
-    "turkish": "hastane"
+    "turkish": "hastane",
+    "type": "noun"
   },
   {
     "level": 10,
     "german": "führen (geführt)",
-    "turkish": "yönetmek / rehberlik etmek"
+    "turkish": "yönetmek / rehberlik etmek",
+    "type": "verb"
   },
   {
     "level": 10,
     "german": "obwohl",
-    "turkish": "rağmen"
+    "turkish": "rağmen",
+    "type": "conjunction"
   },
   {
     "level": 11,
     "german": "vergessen (vergessen)",
-    "turkish": "unutmak"
+    "turkish": "unutmak",
+    "type": "verb"
   },
   {
     "level": 11,
     "german": "die Wolke",
-    "turkish": "bulut"
+    "turkish": "bulut",
+    "type": "noun"
   },
   {
     "level": 11,
     "german": "das Wetter",
-    "turkish": "hava"
+    "turkish": "hava",
+    "type": "noun"
   },
   {
     "level": 11,
     "german": "passieren (passiert)",
-    "turkish": "meydana gelmek"
+    "turkish": "meydana gelmek",
+    "type": "verb"
   },
   {
     "level": 11,
     "german": "die Ausstellung",
-    "turkish": "sergi"
+    "turkish": "sergi",
+    "type": "noun"
   },
   {
     "level": 11,
     "german": "die Welt",
-    "turkish": "dünya"
+    "turkish": "dünya",
+    "type": "noun"
   },
   {
     "level": 11,
     "german": "können (gekonnt)",
-    "turkish": "yapabilmek"
+    "turkish": "yapabilmek",
+    "type": "verb"
   },
   {
     "level": 11,
     "german": "die Geschichte",
-    "turkish": "tarih / hikaye"
+    "turkish": "tarih / hikaye",
+    "type": "noun"
   },
   {
     "level": 11,
     "german": "anfangen (angefangen)",
-    "turkish": "başlamak"
+    "turkish": "başlamak",
+    "type": "verb"
   },
   {
     "level": 11,
     "german": "die Gesundheit",
-    "turkish": "sağlık"
+    "turkish": "sağlık",
+    "type": "noun"
   },
   {
     "level": 12,
     "german": "ziehen (gezogen)",
-    "turkish": "çekmek / taşınmak"
+    "turkish": "çekmek / taşınmak",
+    "type": "verb"
   },
   {
     "level": 12,
     "german": "das Thema",
-    "turkish": "konu"
+    "turkish": "konu",
+    "type": "noun"
   },
   {
     "level": 12,
     "german": "die Gruppe",
-    "turkish": "grup"
+    "turkish": "grup",
+    "type": "noun"
   },
   {
     "level": 12,
     "german": "steigen (gestiegen)",
-    "turkish": "tırmanmak"
+    "turkish": "tırmanmak",
+    "type": "verb"
   },
   {
     "level": 12,
     "german": "die Insel",
-    "turkish": "ada"
+    "turkish": "ada",
+    "type": "noun"
   },
   {
     "level": 12,
     "german": "der Fluss",
-    "turkish": "nehir"
+    "turkish": "nehir",
+    "type": "noun"
   },
   {
     "level": 12,
     "german": "aufstehen (aufgestanden)",
-    "turkish": "kalkmak / uyanmak"
+    "turkish": "kalkmak / uyanmak",
+    "type": "verb"
   },
   {
     "level": 12,
     "german": "die Situation",
-    "turkish": "durum"
+    "turkish": "durum",
+    "type": "noun"
   },
   {
     "level": 12,
     "german": "klagen (geklagt)",
-    "turkish": "şikayet etmek"
+    "turkish": "şikayet etmek",
+    "type": "verb"
   },
   {
     "level": 12,
     "german": "der Vorteil",
-    "turkish": "avantaj"
+    "turkish": "avantaj",
+    "type": "noun"
   },
   {
     "level": 13,
     "german": "sitzen (gesessen)",
-    "turkish": "oturmak"
+    "turkish": "oturmak",
+    "type": "verb"
   },
   {
     "level": 13,
     "german": "der Nachteil",
-    "turkish": "dezavantaj"
+    "turkish": "dezavantaj",
+    "type": "noun"
   },
   {
     "level": 13,
     "german": "die Erfahrung",
-    "turkish": "deneyim"
+    "turkish": "deneyim",
+    "type": "noun"
   },
   {
     "level": 13,
     "german": "fliegen (geflogen)",
-    "turkish": "uçmak"
+    "turkish": "uçmak",
+    "type": "verb"
   },
   {
     "level": 13,
     "german": "der Fehler",
-    "turkish": "hata"
+    "turkish": "hata",
+    "type": "noun"
   },
   {
     "level": 13,
     "german": "nehmen (genommen)",
-    "turkish": "almak"
+    "turkish": "almak",
+    "type": "verb"
   },
   {
     "level": 13,
     "german": "die Nachricht",
-    "turkish": "haber / mesaj"
+    "turkish": "haber / mesaj",
+    "type": "noun"
   },
   {
     "level": 13,
     "german": "laufen (gelaufen)",
-    "turkish": "yürümek / koşmak"
+    "turkish": "yürümek / koşmak",
+    "type": "verb"
   },
   {
     "level": 13,
     "german": "die Ruhe",
-    "turkish": "sessizlik"
+    "turkish": "sessizlik",
+    "type": "noun"
   },
   {
     "level": 13,
     "german": "schaffen (geschafft)",
-    "turkish": "başarmak"
+    "turkish": "başarmak",
+    "type": "verb"
   },
   {
     "level": 14,
     "german": "schicken (geschickt)",
-    "turkish": "göndermek"
+    "turkish": "göndermek",
+    "type": "verb"
   },
   {
     "level": 14,
     "german": "die E-Mail",
-    "turkish": "e-posta"
+    "turkish": "e-posta",
+    "type": "noun"
   },
   {
     "level": 14,
     "german": "die Post",
-    "turkish": "posta"
+    "turkish": "posta",
+    "type": "noun"
   },
   {
     "level": 14,
     "german": "wünschen (gewünscht)",
-    "turkish": "dilemek"
+    "turkish": "dilemek",
+    "type": "verb"
   },
   {
     "level": 14,
     "german": "das Fest",
-    "turkish": "kutlama"
+    "turkish": "kutlama",
+    "type": "noun"
   },
   {
     "level": 14,
     "german": "gewinnen (gewonnen)",
-    "turkish": "kazanmak"
+    "turkish": "kazanmak",
+    "type": "verb"
   },
   {
     "level": 14,
     "german": "die Prüfung",
-    "turkish": "sınav"
+    "turkish": "sınav",
+    "type": "noun"
   },
   {
     "level": 14,
     "german": "verlieren (verloren)",
-    "turkish": "kaybetmek"
+    "turkish": "kaybetmek",
+    "type": "verb"
   },
   {
     "level": 14,
     "german": "die Hilfe",
-    "turkish": "yardım"
+    "turkish": "yardım",
+    "type": "noun"
   },
   {
     "level": 14,
     "german": "bezahlen (bezahlt)",
-    "turkish": "ödemek"
+    "turkish": "ödemek",
+    "type": "verb"
   },
   {
     "level": 15,
     "german": "werfen (geworfen)",
-    "turkish": "atmak / fırlatmak"
+    "turkish": "atmak / fırlatmak",
+    "type": "verb"
   },
   {
     "level": 15,
     "german": "die Kasse",
-    "turkish": "kasa"
+    "turkish": "kasa",
+    "type": "noun"
   },
   {
     "level": 15,
     "german": "die Aufgabe",
-    "turkish": "görev / ödev"
+    "turkish": "görev / ödev",
+    "type": "noun"
   },
   {
     "level": 15,
     "german": "vergleichen (verglichen)",
-    "turkish": "karşılaştırmak"
+    "turkish": "karşılaştırmak",
+    "type": "verb"
   },
   {
     "level": 15,
     "german": "das Geheimnis",
-    "turkish": "sır"
+    "turkish": "sır",
+    "type": "noun"
   },
   {
     "level": 15,
     "german": "unterschreiben (unterschrieben)",
-    "turkish": "imzalamak"
+    "turkish": "imzalamak",
+    "type": "verb"
   },
   {
     "level": 15,
     "german": "der Bericht",
-    "turkish": "rapor"
+    "turkish": "rapor",
+    "type": "noun"
   },
   {
     "level": 15,
     "german": "stehen (gestanden)",
-    "turkish": "ayakta durmak"
+    "turkish": "ayakta durmak",
+    "type": "verb"
   },
   {
     "level": 15,
     "german": "die Ausbildung",
-    "turkish": "mesleki eğitim"
+    "turkish": "mesleki eğitim",
+    "type": "noun"
   },
   {
     "level": 15,
     "german": "zurückkommen (zurückgekommen)",
-    "turkish": "geri dönmek"
+    "turkish": "geri dönmek",
+    "type": "verb"
   },
   {
     "level": 16,
     "german": "erklären (erklärt)",
-    "turkish": "açıklamak"
+    "turkish": "açıklamak",
+    "type": "verb"
   },
   {
     "level": 16,
     "german": "der Bürgersteig",
-    "turkish": "kaldırım"
+    "turkish": "kaldırım",
+    "type": "noun"
   },
   {
     "level": 16,
     "german": "die Kreuzung",
-    "turkish": "kavşak"
+    "turkish": "kavşak",
+    "type": "noun"
   },
   {
     "level": 16,
     "german": "halten (gehalten)",
-    "turkish": "tutmak / durmak"
+    "turkish": "tutmak / durmak",
+    "type": "verb"
   },
   {
     "level": 16,
     "german": "die Erinnerung",
-    "turkish": "hatıra"
+    "turkish": "hatıra",
+    "type": "noun"
   },
   {
     "level": 16,
     "german": "folgen (gefolgt)",
-    "turkish": "takip etmek"
+    "turkish": "takip etmek",
+    "type": "verb"
   },
   {
     "level": 16,
     "german": "die Sorge",
-    "turkish": "endişe"
+    "turkish": "endişe",
+    "type": "noun"
   },
   {
     "level": 16,
     "german": "unternehmen (unternommen)",
-    "turkish": "yapmak / girişmek"
+    "turkish": "yapmak / girişmek",
+    "type": "verb"
   },
   {
     "level": 16,
     "german": "glücklich",
-    "turkish": "mutlu"
+    "turkish": "mutlu",
+    "type": "adjective"
   },
   {
     "level": 16,
     "german": "die Universität",
-    "turkish": "üniversite"
+    "turkish": "üniversite",
+    "type": "noun"
   },
   {
     "level": 17,
     "german": "entdecken (entdeckt)",
-    "turkish": "keşfetmek"
+    "turkish": "keşfetmek",
+    "type": "verb"
   },
   {
     "level": 17,
     "german": "der Unfall",
-    "turkish": "kaza"
+    "turkish": "kaza",
+    "type": "noun"
   },
   {
     "level": 17,
     "german": "die Richtung",
-    "turkish": "yön"
+    "turkish": "yön",
+    "type": "noun"
   },
   {
     "level": 17,
     "german": "unabhängig",
-    "turkish": "bağımsız"
+    "turkish": "bağımsız",
+    "type": "adjective"
   },
   {
     "level": 17,
     "german": "das Ergebnis",
-    "turkish": "sonuç"
+    "turkish": "sonuç",
+    "type": "noun"
   },
   {
     "level": 17,
     "german": "vermeiden (vermieden)",
-    "turkish": "kaçınmak"
+    "turkish": "kaçınmak",
+    "type": "verb"
   },
   {
     "level": 17,
     "german": "die Regierung",
-    "turkish": "hükümet"
+    "turkish": "hükümet",
+    "type": "noun"
   },
   {
     "level": 17,
     "german": "verbessern (verbessert)",
-    "turkish": "geliştirmek"
+    "turkish": "geliştirmek",
+    "type": "verb"
   },
   {
     "level": 17,
     "german": "die Zutat",
-    "turkish": "malzeme"
+    "turkish": "malzeme",
+    "type": "noun"
   },
   {
     "level": 17,
     "german": "trocknen (getrocknet)",
-    "turkish": "kurutmak"
+    "turkish": "kurutmak",
+    "type": "verb"
   },
   {
     "level": 18,
     "german": "der Vorschlag",
-    "turkish": "öneri"
+    "turkish": "öneri",
+    "type": "noun"
   },
   {
     "level": 18,
     "german": "vorbereiten (vorbereitet)",
-    "turkish": "hazırlamak"
+    "turkish": "hazırlamak",
+    "type": "verb"
   },
   {
     "level": 18,
     "german": "die Wissenschaft",
-    "turkish": "bilim"
+    "turkish": "bilim",
+    "type": "noun"
   },
   {
     "level": 18,
     "german": "gehören (gehört)",
-    "turkish": "ait olmak"
+    "turkish": "ait olmak",
+    "type": "verb"
   },
   {
     "level": 18,
     "german": "die Vergangenheit",
-    "turkish": "geçmiş"
+    "turkish": "geçmiş",
+    "type": "noun"
   },
   {
     "level": 18,
     "german": "zählen (gezählt)",
-    "turkish": "saymak"
+    "turkish": "saymak",
+    "type": "verb"
   },
   {
     "level": 18,
     "german": "die Gegenwart",
-    "turkish": "şimdi"
+    "turkish": "şimdi",
+    "type": "noun"
   },
   {
     "level": 18,
     "german": "die Zukunft",
-    "turkish": "gelecek"
+    "turkish": "gelecek",
+    "type": "noun"
   },
   {
     "level": 18,
     "german": "teilen (geteilt)",
-    "turkish": "bölmek / paylaşmak"
+    "turkish": "bölmek / paylaşmak",
+    "type": "verb"
   },
   {
     "level": 18,
     "german": "die Bevölkerung",
-    "turkish": "nüfus"
+    "turkish": "nüfus",
+    "type": "noun"
   },
   {
     "level": 19,
     "german": "verbieten (verboten)",
-    "turkish": "yasaklamak"
+    "turkish": "yasaklamak",
+    "type": "verb"
   },
   {
     "level": 19,
     "german": "erreichen (erreicht)",
-    "turkish": "ulaşmak"
+    "turkish": "ulaşmak",
+    "type": "verb"
   },
   {
     "level": 19,
     "german": "die Firma",
-    "turkish": "firma"
+    "turkish": "firma",
+    "type": "noun"
   },
   {
     "level": 19,
     "german": "die Weiterbildung",
-    "turkish": "mesleki gelişim"
+    "turkish": "mesleki gelişim",
+    "type": "noun"
   },
   {
     "level": 19,
     "german": "feiern (gefeiert)",
-    "turkish": "kutlamak"
+    "turkish": "kutlamak",
+    "type": "verb"
   },
   {
     "level": 19,
     "german": "der Ausdruck",
-    "turkish": "ifade"
+    "turkish": "ifade",
+    "type": "noun"
   },
   {
     "level": 19,
     "german": "die Kultur",
-    "turkish": "kültür"
+    "turkish": "kültür",
+    "type": "noun"
   },
   {
     "level": 19,
     "german": "erhalten (erhalten)",
-    "turkish": "almak / korumak"
+    "turkish": "almak / korumak",
+    "type": "verb"
   },
   {
     "level": 19,
     "german": "der Gedanke",
-    "turkish": "düşünce"
+    "turkish": "düşünce",
+    "type": "noun"
   },
   {
     "level": 19,
     "german": "das Gewicht",
-    "turkish": "ağırlık"
+    "turkish": "ağırlık",
+    "type": "noun"
   },
   {
     "level": 20,
     "german": "die Fähigkeit",
-    "turkish": "yetenek"
+    "turkish": "yetenek",
+    "type": "noun"
   },
   {
     "level": 20,
     "german": "entstehen (entstanden)",
-    "turkish": "oluşmak"
+    "turkish": "oluşmak",
+    "type": "verb"
   },
   {
     "level": 20,
     "german": "der Beruf",
-    "turkish": "meslek"
+    "turkish": "meslek",
+    "type": "noun"
   },
   {
     "level": 20,
     "german": "untersuchen (untersucht)",
-    "turkish": "araştırmak / muayene etmek"
+    "turkish": "araştırmak / muayene etmek",
+    "type": "verb"
   },
   {
     "level": 20,
     "german": "das Gebäude",
-    "turkish": "bina"
+    "turkish": "bina",
+    "type": "noun"
   },
   {
     "level": 20,
     "german": "die Grenze",
-    "turkish": "sınır"
+    "turkish": "sınır",
+    "type": "noun"
   },
   {
     "level": 20,
     "german": "feststellen (festgestellt)",
-    "turkish": "tespit etmek"
+    "turkish": "tespit etmek",
+    "type": "verb"
   },
   {
     "level": 20,
     "german": "die Bewegung",
-    "turkish": "hareket"
+    "turkish": "hareket",
+    "type": "noun"
   },
   {
     "level": 20,
     "german": "organisieren (organisiert)",
-    "turkish": "düzenlemek"
+    "turkish": "düzenlemek",
+    "type": "verb"
   },
   {
     "level": 20,
     "german": "die Erlaubnis",
-    "turkish": "izin"
+    "turkish": "izin",
+    "type": "noun"
   }
 ]
