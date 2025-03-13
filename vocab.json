@@ -1,153 +1,1002 @@
 [
-    {
-      "level": 1,
-      "german": "die Maus",
-      "turkish": "fare"
-    },
-    {
-      "level": 1,
-      "german": "der Stuhl",
-      "turkish": "sandalye"
-    },
-    {
-      "level": 1,
-      "german": "der Tisch",
-      "turkish": "masa"
-    },
-    {
-      "level": 1,
-      "german": "das Fenster",
-      "turkish": "pencere"
-    },
-    {
-      "level": 1,
-      "german": "die Tür",
-      "turkish": "kapı"
-    },
-    {
-      "level": 1,
-      "german": "der Ball",
-      "turkish": "top"
-    },
-    {
-      "level": 1,
-      "german": "das Fahrrad",
-      "turkish": "bisiklet"
-    },
-    {
-      "level": 1,
-      "german": "die Lampe",
-      "turkish": "lamba"
-    },
-    {
-      "level": 1,
-      "german": "der Baum",
-      "turkish": "ağaç"
-    },
-    {
-      "level": 1,
-      "german": "das Wasser",
-      "turkish": "su"
-    },
-    {
-      "level": 2,
-      "german": "der Käse",
-      "turkish": "peynir"
-    },
-    {
-      "level": 2,
-      "german": "die Milch",
-      "turkish": "süt"
-    },
-    {
-      "level": 2,
-      "german": "der Schrank",
-      "turkish": "dolap"
-    },
-    {
-      "level": 2,
-      "german": "das Messer",
-      "turkish": "bıçak"
-    },
-    {
-      "level": 2,
-      "german": "die Gabel",
-      "turkish": "çatal"
-    },
-    {
-      "level": 2,
-      "german": "der Löffel",
-      "turkish": "kaşık"
-    },
-    {
-      "level": 2,
-      "german": "das Zimmer",
-      "turkish": "oda"
-    },
-    {
-      "level": 2,
-      "german": "die Jacke",
-      "turkish": "ceket"
-    },
-    {
-      "level": 2,
-      "german": "der Schuh",
-      "turkish": "ayakkabı"
-    },
-    {
-      "level": 2,
-      "german": "das Kleid",
-      "turkish": "elbise"
-    },
-    {
-      "level": 3,
-      "german": "der Lehrer",
-      "turkish": "öğretmen"
-    },
-    {
-      "level": 3,
-      "german": "die Studentin",
-      "turkish": "öğrenci"
-    },
-    {
-      "level": 3,
-      "german": "der Computer",
-      "turkish": "bilgisayar"
-    },
-    {
-      "level": 3,
-      "german": "die Zeitung",
-      "turkish": "gazete"
-    },
-    {
-      "level": 3,
-      "german": "das Telefon",
-      "turkish": "telefon"
-    },
-    {
-      "level": 3,
-      "german": "die Brücke",
-      "turkish": "köprü"
-    },
-    {
-      "level": 3,
-      "german": "das Museum",
-      "turkish": "müze"
-    },
-    {
-      "level": 3,
-      "german": "der Park",
-      "turkish": "park"
-    },
-    {
-      "level": 3,
-      "german": "die Bibliothek",
-      "turkish": "kütüphane"
-    },
-    {
-      "level": 3,
-      "german": "das Restaurant",
-      "turkish": "restoran"
-    }
-  ]
-  
+  {
+    "level": 1,
+    "german": "gehen (gegangen)",
+    "turkish": "gitmek"
+  },
+  {
+    "level": 1,
+    "german": "die Katze",
+    "turkish": "kedi"
+  },
+  {
+    "level": 1,
+    "german": "öffnen (geöffnet)",
+    "turkish": "açmak"
+  },
+  {
+    "level": 1,
+    "german": "und",
+    "turkish": "ve"
+  },
+  {
+    "level": 1,
+    "german": "das Buch",
+    "turkish": "kitap"
+  },
+  {
+    "level": 1,
+    "german": "sprechen (gesprochen)",
+    "turkish": "konuşmak"
+  },
+  {
+    "level": 1,
+    "german": "hören (gehört)",
+    "turkish": "duymak"
+  },
+  {
+    "level": 1,
+    "german": "der Mann",
+    "turkish": "adam"
+  },
+  {
+    "level": 1,
+    "german": "aber",
+    "turkish": "ama"
+  },
+  {
+    "level": 1,
+    "german": "die Frau",
+    "turkish": "kadın"
+  },
+  {
+    "level": 2,
+    "german": "der Hund",
+    "turkish": "köpek"
+  },
+  {
+    "level": 2,
+    "german": "lernen (gelernt)",
+    "turkish": "öğrenmek"
+  },
+  {
+    "level": 2,
+    "german": "oder",
+    "turkish": "veya"
+  },
+  {
+    "level": 2,
+    "german": "die Blume",
+    "turkish": "çiçek"
+  },
+  {
+    "level": 2,
+    "german": "schreiben (geschrieben)",
+    "turkish": "yazmak"
+  },
+  {
+    "level": 2,
+    "german": "kommen (gekommen)",
+    "turkish": "gelmek"
+  },
+  {
+    "level": 2,
+    "german": "das Haus",
+    "turkish": "ev"
+  },
+  {
+    "level": 2,
+    "german": "die Schwester",
+    "turkish": "kız kardeş"
+  },
+  {
+    "level": 2,
+    "german": "lesen (gelesen)",
+    "turkish": "okumak"
+  },
+  {
+    "level": 2,
+    "german": "weil",
+    "turkish": "çünkü"
+  },
+  {
+    "level": 3,
+    "german": "fahren (gefahren)",
+    "turkish": "sürmek"
+  },
+  {
+    "level": 3,
+    "german": "die Stadt",
+    "turkish": "şehir"
+  },
+  {
+    "level": 3,
+    "german": "trinken (getrunken)",
+    "turkish": "içmek"
+  },
+  {
+    "level": 3,
+    "german": "der Freund",
+    "turkish": "arkadaş (erkek)"
+  },
+  {
+    "level": 3,
+    "german": "die Freundin",
+    "turkish": "arkadaş (kadın)"
+  },
+  {
+    "level": 3,
+    "german": "sondern",
+    "turkish": "fakat"
+  },
+  {
+    "level": 3,
+    "german": "essen (gegessen)",
+    "turkish": "yemek"
+  },
+  {
+    "level": 3,
+    "german": "das Auto",
+    "turkish": "araba"
+  },
+  {
+    "level": 3,
+    "german": "die Tasche",
+    "turkish": "çanta"
+  },
+  {
+    "level": 3,
+    "german": "sehen (gesehen)",
+    "turkish": "görmek"
+  },
+  {
+    "level": 4,
+    "german": "schwimmen (geschwommen)",
+    "turkish": "yüzmek"
+  },
+  {
+    "level": 4,
+    "german": "der Vogel",
+    "turkish": "kuş"
+  },
+  {
+    "level": 4,
+    "german": "wohnen (gewohnt)",
+    "turkish": "oturmak"
+  },
+  {
+    "level": 4,
+    "german": "die Suppe",
+    "turkish": "çorba"
+  },
+  {
+    "level": 4,
+    "german": "treffen (getroffen)",
+    "turkish": "buluşmak"
+  },
+  {
+    "level": 4,
+    "german": "die Straße",
+    "turkish": "cadde"
+  },
+  {
+    "level": 4,
+    "german": "kaufen (gekauft)",
+    "turkish": "satın almak"
+  },
+  {
+    "level": 4,
+    "german": "wenn",
+    "turkish": "eğer"
+  },
+  {
+    "level": 4,
+    "german": "das Flugzeug",
+    "turkish": "uçak"
+  },
+  {
+    "level": 4,
+    "german": "bleiben (geblieben)",
+    "turkish": "kalmak"
+  },
+  {
+    "level": 5,
+    "german": "fragen (gefragt)",
+    "turkish": "sormak"
+  },
+  {
+    "level": 5,
+    "german": "die Familie",
+    "turkish": "aile"
+  },
+  {
+    "level": 5,
+    "german": "wandern (gewandert)",
+    "turkish": "yürüyüş yapmak"
+  },
+  {
+    "level": 5,
+    "german": "das Kino",
+    "turkish": "sinema"
+  },
+  {
+    "level": 5,
+    "german": "spielen (gespielt)",
+    "turkish": "oynamak"
+  },
+  {
+    "level": 5,
+    "german": "die Arbeit",
+    "turkish": "iş"
+  },
+  {
+    "level": 5,
+    "german": "helfen (geholfen)",
+    "turkish": "yardım etmek"
+  },
+  {
+    "level": 5,
+    "german": "die Hand",
+    "turkish": "el"
+  },
+  {
+    "level": 5,
+    "german": "doch",
+    "turkish": "yine de"
+  },
+  {
+    "level": 5,
+    "german": "der Bruder",
+    "turkish": "erkek kardeş"
+  },
+  {
+    "level": 6,
+    "german": "sagen (gesagt)",
+    "turkish": "söylemek"
+  },
+  {
+    "level": 6,
+    "german": "das Getränk",
+    "turkish": "içecek"
+  },
+  {
+    "level": 6,
+    "german": "springen (gesprungen)",
+    "turkish": "zıplamak"
+  },
+  {
+    "level": 6,
+    "german": "die Schule",
+    "turkish": "okul"
+  },
+  {
+    "level": 6,
+    "german": "entscheiden (entschieden)",
+    "turkish": "karar vermek"
+  },
+  {
+    "level": 6,
+    "german": "die Zeit",
+    "turkish": "zaman"
+  },
+  {
+    "level": 6,
+    "german": "dass",
+    "turkish": "ki"
+  },
+  {
+    "level": 6,
+    "german": "tragen (getragen)",
+    "turkish": "taşımak / giymek"
+  },
+  {
+    "level": 6,
+    "german": "das Lied",
+    "turkish": "şarkı"
+  },
+  {
+    "level": 6,
+    "german": "warten (gewartet)",
+    "turkish": "beklemek"
+  },
+  {
+    "level": 7,
+    "german": "lügen (gelogen)",
+    "turkish": "yalan söylemek"
+  },
+  {
+    "level": 7,
+    "german": "das Problem",
+    "turkish": "sorun"
+  },
+  {
+    "level": 7,
+    "german": "die Lösung",
+    "turkish": "çözüm"
+  },
+  {
+    "level": 7,
+    "german": "tanzen (getanzt)",
+    "turkish": "dans etmek"
+  },
+  {
+    "level": 7,
+    "german": "wählen (gewählt)",
+    "turkish": "seçmek"
+  },
+  {
+    "level": 7,
+    "german": "die Hoffnung",
+    "turkish": "umut"
+  },
+  {
+    "level": 7,
+    "german": "werden (geworden)",
+    "turkish": "olmak"
+  },
+  {
+    "level": 7,
+    "german": "das Gespräch",
+    "turkish": "konuşma"
+  },
+  {
+    "level": 7,
+    "german": "zu Hause",
+    "turkish": "evde"
+  },
+  {
+    "level": 7,
+    "german": "verstehen (verstanden)",
+    "turkish": "anlamak"
+  },
+  {
+    "level": 8,
+    "german": "versuchen (versucht)",
+    "turkish": "denemek"
+  },
+  {
+    "level": 8,
+    "german": "die Wand",
+    "turkish": "duvar"
+  },
+  {
+    "level": 8,
+    "german": "die Decke",
+    "turkish": "tavan"
+  },
+  {
+    "level": 8,
+    "german": "müssen (gemusst)",
+    "turkish": "zorunda olmak"
+  },
+  {
+    "level": 8,
+    "german": "die Brille",
+    "turkish": "gözlük"
+  },
+  {
+    "level": 8,
+    "german": "danken (gedankt)",
+    "turkish": "teşekkür etmek"
+  },
+  {
+    "level": 8,
+    "german": "deshalb",
+    "turkish": "bu yüzden"
+  },
+  {
+    "level": 8,
+    "german": "suchen (gesucht)",
+    "turkish": "aramak"
+  },
+  {
+    "level": 8,
+    "german": "die Woche",
+    "turkish": "hafta"
+  },
+  {
+    "level": 8,
+    "german": "lachen (gelacht)",
+    "turkish": "gülmek"
+  },
+  {
+    "level": 9,
+    "german": "bringen (gebracht)",
+    "turkish": "getirmek"
+  },
+  {
+    "level": 9,
+    "german": "der Rücken",
+    "turkish": "sırt"
+  },
+  {
+    "level": 9,
+    "german": "die Schulter",
+    "turkish": "omuz"
+  },
+  {
+    "level": 9,
+    "german": "dürfen (gedurft)",
+    "turkish": "izinli olmak"
+  },
+  {
+    "level": 9,
+    "german": "die Möglichkeit",
+    "turkish": "olanak"
+  },
+  {
+    "level": 9,
+    "german": "der Moment",
+    "turkish": "an"
+  },
+  {
+    "level": 9,
+    "german": "lieben (geliebt)",
+    "turkish": "sevmek"
+  },
+  {
+    "level": 9,
+    "german": "die Hochzeit",
+    "turkish": "düğün"
+  },
+  {
+    "level": 9,
+    "german": "reisen (gereist)",
+    "turkish": "seyahat etmek"
+  },
+  {
+    "level": 9,
+    "german": "damit",
+    "turkish": "böylece"
+  },
+  {
+    "level": 10,
+    "german": "backen (gebacken)",
+    "turkish": "fırında pişirmek"
+  },
+  {
+    "level": 10,
+    "german": "der Kuchen",
+    "turkish": "pasta"
+  },
+  {
+    "level": 10,
+    "german": "die Bäckerei",
+    "turkish": "fırın"
+  },
+  {
+    "level": 10,
+    "german": "einladen (eingeladen)",
+    "turkish": "davet etmek"
+  },
+  {
+    "level": 10,
+    "german": "die Einladung",
+    "turkish": "davet"
+  },
+  {
+    "level": 10,
+    "german": "glauben (geglaubt)",
+    "turkish": "inanmak"
+  },
+  {
+    "level": 10,
+    "german": "der Kopf",
+    "turkish": "baş"
+  },
+  {
+    "level": 10,
+    "german": "das Krankenhaus",
+    "turkish": "hastane"
+  },
+  {
+    "level": 10,
+    "german": "führen (geführt)",
+    "turkish": "yönetmek / rehberlik etmek"
+  },
+  {
+    "level": 10,
+    "german": "obwohl",
+    "turkish": "rağmen"
+  },
+  {
+    "level": 11,
+    "german": "vergessen (vergessen)",
+    "turkish": "unutmak"
+  },
+  {
+    "level": 11,
+    "german": "die Wolke",
+    "turkish": "bulut"
+  },
+  {
+    "level": 11,
+    "german": "das Wetter",
+    "turkish": "hava"
+  },
+  {
+    "level": 11,
+    "german": "passieren (passiert)",
+    "turkish": "meydana gelmek"
+  },
+  {
+    "level": 11,
+    "german": "die Ausstellung",
+    "turkish": "sergi"
+  },
+  {
+    "level": 11,
+    "german": "die Welt",
+    "turkish": "dünya"
+  },
+  {
+    "level": 11,
+    "german": "können (gekonnt)",
+    "turkish": "yapabilmek"
+  },
+  {
+    "level": 11,
+    "german": "die Geschichte",
+    "turkish": "tarih / hikaye"
+  },
+  {
+    "level": 11,
+    "german": "anfangen (angefangen)",
+    "turkish": "başlamak"
+  },
+  {
+    "level": 11,
+    "german": "die Gesundheit",
+    "turkish": "sağlık"
+  },
+  {
+    "level": 12,
+    "german": "ziehen (gezogen)",
+    "turkish": "çekmek / taşınmak"
+  },
+  {
+    "level": 12,
+    "german": "das Thema",
+    "turkish": "konu"
+  },
+  {
+    "level": 12,
+    "german": "die Gruppe",
+    "turkish": "grup"
+  },
+  {
+    "level": 12,
+    "german": "steigen (gestiegen)",
+    "turkish": "tırmanmak"
+  },
+  {
+    "level": 12,
+    "german": "die Insel",
+    "turkish": "ada"
+  },
+  {
+    "level": 12,
+    "german": "der Fluss",
+    "turkish": "nehir"
+  },
+  {
+    "level": 12,
+    "german": "aufstehen (aufgestanden)",
+    "turkish": "kalkmak / uyanmak"
+  },
+  {
+    "level": 12,
+    "german": "die Situation",
+    "turkish": "durum"
+  },
+  {
+    "level": 12,
+    "german": "klagen (geklagt)",
+    "turkish": "şikayet etmek"
+  },
+  {
+    "level": 12,
+    "german": "der Vorteil",
+    "turkish": "avantaj"
+  },
+  {
+    "level": 13,
+    "german": "sitzen (gesessen)",
+    "turkish": "oturmak"
+  },
+  {
+    "level": 13,
+    "german": "der Nachteil",
+    "turkish": "dezavantaj"
+  },
+  {
+    "level": 13,
+    "german": "die Erfahrung",
+    "turkish": "deneyim"
+  },
+  {
+    "level": 13,
+    "german": "fliegen (geflogen)",
+    "turkish": "uçmak"
+  },
+  {
+    "level": 13,
+    "german": "der Fehler",
+    "turkish": "hata"
+  },
+  {
+    "level": 13,
+    "german": "nehmen (genommen)",
+    "turkish": "almak"
+  },
+  {
+    "level": 13,
+    "german": "die Nachricht",
+    "turkish": "haber / mesaj"
+  },
+  {
+    "level": 13,
+    "german": "laufen (gelaufen)",
+    "turkish": "yürümek / koşmak"
+  },
+  {
+    "level": 13,
+    "german": "die Ruhe",
+    "turkish": "sessizlik"
+  },
+  {
+    "level": 13,
+    "german": "schaffen (geschafft)",
+    "turkish": "başarmak"
+  },
+  {
+    "level": 14,
+    "german": "schicken (geschickt)",
+    "turkish": "göndermek"
+  },
+  {
+    "level": 14,
+    "german": "die E-Mail",
+    "turkish": "e-posta"
+  },
+  {
+    "level": 14,
+    "german": "die Post",
+    "turkish": "posta"
+  },
+  {
+    "level": 14,
+    "german": "wünschen (gewünscht)",
+    "turkish": "dilemek"
+  },
+  {
+    "level": 14,
+    "german": "das Fest",
+    "turkish": "kutlama"
+  },
+  {
+    "level": 14,
+    "german": "gewinnen (gewonnen)",
+    "turkish": "kazanmak"
+  },
+  {
+    "level": 14,
+    "german": "die Prüfung",
+    "turkish": "sınav"
+  },
+  {
+    "level": 14,
+    "german": "verlieren (verloren)",
+    "turkish": "kaybetmek"
+  },
+  {
+    "level": 14,
+    "german": "die Hilfe",
+    "turkish": "yardım"
+  },
+  {
+    "level": 14,
+    "german": "bezahlen (bezahlt)",
+    "turkish": "ödemek"
+  },
+  {
+    "level": 15,
+    "german": "werfen (geworfen)",
+    "turkish": "atmak / fırlatmak"
+  },
+  {
+    "level": 15,
+    "german": "die Kasse",
+    "turkish": "kasa"
+  },
+  {
+    "level": 15,
+    "german": "die Aufgabe",
+    "turkish": "görev / ödev"
+  },
+  {
+    "level": 15,
+    "german": "vergleichen (verglichen)",
+    "turkish": "karşılaştırmak"
+  },
+  {
+    "level": 15,
+    "german": "das Geheimnis",
+    "turkish": "sır"
+  },
+  {
+    "level": 15,
+    "german": "unterschreiben (unterschrieben)",
+    "turkish": "imzalamak"
+  },
+  {
+    "level": 15,
+    "german": "der Bericht",
+    "turkish": "rapor"
+  },
+  {
+    "level": 15,
+    "german": "stehen (gestanden)",
+    "turkish": "ayakta durmak"
+  },
+  {
+    "level": 15,
+    "german": "die Ausbildung",
+    "turkish": "mesleki eğitim"
+  },
+  {
+    "level": 15,
+    "german": "zurückkommen (zurückgekommen)",
+    "turkish": "geri dönmek"
+  },
+  {
+    "level": 16,
+    "german": "erklären (erklärt)",
+    "turkish": "açıklamak"
+  },
+  {
+    "level": 16,
+    "german": "der Bürgersteig",
+    "turkish": "kaldırım"
+  },
+  {
+    "level": 16,
+    "german": "die Kreuzung",
+    "turkish": "kavşak"
+  },
+  {
+    "level": 16,
+    "german": "halten (gehalten)",
+    "turkish": "tutmak / durmak"
+  },
+  {
+    "level": 16,
+    "german": "die Erinnerung",
+    "turkish": "hatıra"
+  },
+  {
+    "level": 16,
+    "german": "folgen (gefolgt)",
+    "turkish": "takip etmek"
+  },
+  {
+    "level": 16,
+    "german": "die Sorge",
+    "turkish": "endişe"
+  },
+  {
+    "level": 16,
+    "german": "unternehmen (unternommen)",
+    "turkish": "yapmak / girişmek"
+  },
+  {
+    "level": 16,
+    "german": "glücklich",
+    "turkish": "mutlu"
+  },
+  {
+    "level": 16,
+    "german": "die Universität",
+    "turkish": "üniversite"
+  },
+  {
+    "level": 17,
+    "german": "entdecken (entdeckt)",
+    "turkish": "keşfetmek"
+  },
+  {
+    "level": 17,
+    "german": "der Unfall",
+    "turkish": "kaza"
+  },
+  {
+    "level": 17,
+    "german": "die Richtung",
+    "turkish": "yön"
+  },
+  {
+    "level": 17,
+    "german": "unabhängig",
+    "turkish": "bağımsız"
+  },
+  {
+    "level": 17,
+    "german": "das Ergebnis",
+    "turkish": "sonuç"
+  },
+  {
+    "level": 17,
+    "german": "vermeiden (vermieden)",
+    "turkish": "kaçınmak"
+  },
+  {
+    "level": 17,
+    "german": "die Regierung",
+    "turkish": "hükümet"
+  },
+  {
+    "level": 17,
+    "german": "verbessern (verbessert)",
+    "turkish": "geliştirmek"
+  },
+  {
+    "level": 17,
+    "german": "die Zutat",
+    "turkish": "malzeme"
+  },
+  {
+    "level": 17,
+    "german": "trocknen (getrocknet)",
+    "turkish": "kurutmak"
+  },
+  {
+    "level": 18,
+    "german": "der Vorschlag",
+    "turkish": "öneri"
+  },
+  {
+    "level": 18,
+    "german": "vorbereiten (vorbereitet)",
+    "turkish": "hazırlamak"
+  },
+  {
+    "level": 18,
+    "german": "die Wissenschaft",
+    "turkish": "bilim"
+  },
+  {
+    "level": 18,
+    "german": "gehören (gehört)",
+    "turkish": "ait olmak"
+  },
+  {
+    "level": 18,
+    "german": "die Vergangenheit",
+    "turkish": "geçmiş"
+  },
+  {
+    "level": 18,
+    "german": "zählen (gezählt)",
+    "turkish": "saymak"
+  },
+  {
+    "level": 18,
+    "german": "die Gegenwart",
+    "turkish": "şimdi"
+  },
+  {
+    "level": 18,
+    "german": "die Zukunft",
+    "turkish": "gelecek"
+  },
+  {
+    "level": 18,
+    "german": "teilen (geteilt)",
+    "turkish": "bölmek / paylaşmak"
+  },
+  {
+    "level": 18,
+    "german": "die Bevölkerung",
+    "turkish": "nüfus"
+  },
+  {
+    "level": 19,
+    "german": "verbieten (verboten)",
+    "turkish": "yasaklamak"
+  },
+  {
+    "level": 19,
+    "german": "erreichen (erreicht)",
+    "turkish": "ulaşmak"
+  },
+  {
+    "level": 19,
+    "german": "die Firma",
+    "turkish": "firma"
+  },
+  {
+    "level": 19,
+    "german": "die Weiterbildung",
+    "turkish": "mesleki gelişim"
+  },
+  {
+    "level": 19,
+    "german": "feiern (gefeiert)",
+    "turkish": "kutlamak"
+  },
+  {
+    "level": 19,
+    "german": "der Ausdruck",
+    "turkish": "ifade"
+  },
+  {
+    "level": 19,
+    "german": "die Kultur",
+    "turkish": "kültür"
+  },
+  {
+    "level": 19,
+    "german": "erhalten (erhalten)",
+    "turkish": "almak / korumak"
+  },
+  {
+    "level": 19,
+    "german": "der Gedanke",
+    "turkish": "düşünce"
+  },
+  {
+    "level": 19,
+    "german": "das Gewicht",
+    "turkish": "ağırlık"
+  },
+  {
+    "level": 20,
+    "german": "die Fähigkeit",
+    "turkish": "yetenek"
+  },
+  {
+    "level": 20,
+    "german": "entstehen (entstanden)",
+    "turkish": "oluşmak"
+  },
+  {
+    "level": 20,
+    "german": "der Beruf",
+    "turkish": "meslek"
+  },
+  {
+    "level": 20,
+    "german": "untersuchen (untersucht)",
+    "turkish": "araştırmak / muayene etmek"
+  },
+  {
+    "level": 20,
+    "german": "das Gebäude",
+    "turkish": "bina"
+  },
+  {
+    "level": 20,
+    "german": "die Grenze",
+    "turkish": "sınır"
+  },
+  {
+    "level": 20,
+    "german": "feststellen (festgestellt)",
+    "turkish": "tespit etmek"
+  },
+  {
+    "level": 20,
+    "german": "die Bewegung",
+    "turkish": "hareket"
+  },
+  {
+    "level": 20,
+    "german": "organisieren (organisiert)",
+    "turkish": "düzenlemek"
+  },
+  {
+    "level": 20,
+    "german": "die Erlaubnis",
+    "turkish": "izin"
+  }
+]
