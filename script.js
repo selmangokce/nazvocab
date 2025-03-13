@@ -67,33 +67,19 @@ function startQuiz() {
  * GEÇERLİ TUR SORULARINI HAZIRLA
  *************************************/
 function prepareCurrentRound() {
-  // Level 1'de: 20 soru, hepsi level 1’deki 10 kelimeden (tekrarlar mümkün)
+  // Toplam 20 soru hazırlanacak
+  // Level 1'de: 20 soru, hepsi level 1'den (tekrarlar mümkün ama max 2 kez aynı kelime)
   if (currentLevel === 1) {
     let pool = vocabData.filter(w => w.level === 1);
-    currentRound = [];
-    for (let i = 0; i < 20; i++) {
-      let randomIndex = Math.floor(Math.random() * pool.length);
-      currentRound.push(pool[randomIndex]);
-    }
+    currentRound = pickWithMaxTwo(pool, 20);
   } else {
     // Level 2 ve üzeri için: 15 soru mevcut seviyeden, 5 soru önceki seviyelerden
     let poolCurrent = vocabData.filter(w => w.level === currentLevel);
     let poolPrevious = vocabData.filter(w => w.level < currentLevel);
-    let roundCurrent = [];
-    let roundPrevious = [];
 
-    // 15 soru mevcut seviyeden (tekrarlar mümkün)
-    for (let i = 0; i < 15; i++) {
-      if (poolCurrent.length === 0) break;
-      let randomIndex = Math.floor(Math.random() * poolCurrent.length);
-      roundCurrent.push(poolCurrent[randomIndex]);
-    }
-    // 5 soru önceki seviyelerden (tekrarlar mümkün)
-    for (let i = 0; i < 5; i++) {
-      if (poolPrevious.length === 0) break;
-      let randomIndex = Math.floor(Math.random() * poolPrevious.length);
-      roundPrevious.push(poolPrevious[randomIndex]);
-    }
+    let roundCurrent = pickWithMaxTwo(poolCurrent, 15);
+    let roundPrevious = pickWithMaxTwo(poolPrevious, 5);
+
     currentRound = roundCurrent.concat(roundPrevious);
     // Toplam 20 soruyu karıştır
     shuffleArray(currentRound);
@@ -102,6 +88,40 @@ function prepareCurrentRound() {
   if (currentRound.length === 0) {
     alert("Bu seviye için yeterli kelime yok!");
   }
+}
+
+/**
+ * Helper function to pick `count` random items from `pool`
+ * but ensure no single word is chosen more than twice.
+ */
+function pickWithMaxTwo(pool, count) {
+  if (!pool || pool.length === 0) return [];
+  let result = [];
+  let usageCount = {}; // Key: an ID or unique string, Value: how many times used
+
+  // We attempt to randomly pick until we have `count` items or exhaust possibilities
+  // We'll do 10x attempts as a safeguard in case the pool is too small
+  // or if it's impossible to pick enough unique items up to 2 each.
+  let attempts = 0;
+  while (result.length < count && attempts < count * 10) {
+    attempts++;
+    let randIndex = Math.floor(Math.random() * pool.length);
+    let candidate = pool[randIndex];
+
+    // Use the combination of "german + turkish" as a unique key, or you might have an ID
+    let key = candidate.german + '|' + candidate.turkish;
+    usageCount[key] = usageCount[key] || 0;
+
+    // Only add if used < 2 times so far
+    if (usageCount[key] < 2) {
+      result.push(candidate);
+      usageCount[key]++;
+    }
+  }
+
+  // Shuffle the resulting picks
+  shuffleArray(result);
+  return result;
 }
 
 /*************************************
@@ -123,7 +143,7 @@ function showQuestion() {
 
   // 3 şık (1 doğru + 2 rastgele yanlış)
   const correctOption = questionData.turkish;
-  const distractors = getDistractors(correctOption);
+  const distractors = getDistractors(questionData);
 
   let allOptions = [correctOption, ...distractors];
   shuffleArray(allOptions);
@@ -273,12 +293,29 @@ function shuffleArray(array) {
   return array;
 }
 
-function getDistractors(correctAnswer) {
-  let possible = vocabData
-    .map(item => item.turkish)
-    .filter(tur => tur.toLowerCase() !== correctAnswer.toLowerCase());
-  shuffleArray(possible);
-  return possible.slice(0, 2);
+/**
+ * Distractorları, questionData ile aynı `type` ve
+ * level aralığı ±2 içinde olanlardan çekiyoruz.
+ * Aynı kelime hariç 2 tane seçeceğiz.
+ */
+function getDistractors(questionData) {
+  let levelRangeMin = questionData.level - 2;
+  let levelRangeMax = questionData.level + 2;
+  const correctAnswer = questionData.turkish.toLowerCase();
+
+  // Aynı type ve ±2 level aralığında olanları filtrele
+  let candidates = vocabData.filter(item => {
+    return (
+      item.type === questionData.type &&
+      item.level >= levelRangeMin &&
+      item.level <= levelRangeMax &&
+      item.turkish.toLowerCase() !== correctAnswer
+    );
+  });
+
+  shuffleArray(candidates);
+  // İlk 2 tanesini distractor olarak al
+  return candidates.slice(0, 2).map(item => item.turkish);
 }
 
 function updateLevelInfo() {
