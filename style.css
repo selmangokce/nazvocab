@@ -96,4 +96,13 @@ body {
     font-size: 1rem;
     cursor: pointer;
   }
-  
+
+.highlight-correct {
+  background-color: green;
+  color: #fff;
+}
+
+.highlight-wrong {
+  background-color: red;
+  color: #fff;
+}
